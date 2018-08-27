@@ -12,8 +12,8 @@ try:
     a=a/(a-3)
     print(a)
 
-except ZeroDivisionError as e:
-  print("Error occured: ",e)
+except ZeroDivisionError:
+  print("zero division error")
 
 
 
@@ -29,8 +29,8 @@ try:
   l=[1,2,3]
   print(l[3])
 
-except IndexError as e:
-  print("Error occured: ",e)
+except IndexError:
+  print("index out of range")
 
 
 
@@ -80,8 +80,8 @@ a/b result in 0
 try:
   from threading import ABC
   print(ABC)
-except ImportError as e:
-  print("Error occured:",e)
+except ImportError:
+  print("Error occured:")
 
 #2. Value Error
 try:
